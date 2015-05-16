@@ -1,0 +1,17 @@
+{
+  "name": "slack-ascii",
+  "description": "Custom ASCII for Slack",
+  "repository": "https://github.com/xShay/slack-ascii",
+  "keywords": ["slack", "ascii", "emoji"],
+  "env": {
+    "SLACK_SLASH_COMMAND_TOKEN": {
+      "description": "The token from Slack's Slash Command."
+    },
+    "SLACK_HOOK_URL": {
+      "description": "URL for Slack's Incoming Webhook."
+    },
+    "SLACK_TEAM_API_TOKEN": {
+      "description": "Slack Web API token for the team."
+    }
+  }
+}

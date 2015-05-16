@@ -1,0 +1,24 @@
+{
+  "name": "slack-ascii",
+  "version": "1.0.0",
+  "description": "Custom ASCII emoticons for Slack",
+  "author": "Shay Kalyan <shaykalyan@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xShay/slack-ascii.git"
+  }
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "~4.9.x",
+    "node-slack": "0.0.7",
+    "request": "^2.58.0"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "license": "MIT"
+}
