@@ -37,6 +37,12 @@ app.get('/', function(req, res) {
     if (req.query.text == "help") {
         return res.send(helpResponseMessage);
     }
+    if (req.query.text == "image") {
+         var respond = {
+                text: "Hi guys, ASCII slackbot here"
+            };
+         return slack.send(respond);
+    }
 
     var userRequestUrl =
         'https://slack.com/api/users.info?' +
