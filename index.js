@@ -37,6 +37,9 @@ app.get('/', function(req, res) {
     if (req.query.text == "help") {
         return res.send(helpResponseMessage);
     }
+    if (req.query.text == "image") {
+         slack.respond("LOL")
+    }
 
     var userRequestUrl =
         'https://slack.com/api/users.info?' +
