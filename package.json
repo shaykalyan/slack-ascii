@@ -6,8 +6,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/xShay/slack-ascii.git"
-  }
-  "main": "index.js",
+  },
+  "main" : "index.js",
   "scripts": {
     "start": "node index.js"
   },
