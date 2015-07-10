@@ -39,6 +39,7 @@ app.get('/', function(req, res) {
     }
     if (req.query.text == "image") {
          slack.respond("LOL")
+         return res.send();
     }
 
     var userRequestUrl =
