@@ -38,8 +38,19 @@ app.get('/', function(req, res) {
         return res.send(helpResponseMessage);
     }
     if (req.query.text == "image") {
-         slack.respond("LOL")
-         return res.send();
+
+         var reply = slack.respond(req.body,function(hook) {
+ 
+        return {
+            text: 'Good point, ' + hook.user_name,
+            username: 'Bot'
+        };
+
+        res.json(reply);
+ 
+    });
+ 
+    res.json(reply);
     }
 
     var userRequestUrl =
